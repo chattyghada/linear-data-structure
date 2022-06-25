@@ -1,0 +1,32 @@
+ALGORITHM array_sum
+VAR
+    tab1: array_sum[n] 
+    tab2: array_sum[n] 
+    sum:INTEGER:=0;
+    i:INTEGER;
+    j:INTEGER;
+BEGIN
+tab1:={}
+tab2:={}
+write ("please enter an element")
+FOR i FROM 0 TO n-1 STEP 1  DO
+write(tab1[i])
+END_FOR
+FOR j FROM 0 TO n-1 STEP 1  DO
+write(tab2[j])
+END_FOR
+REPEAT
+
+FOR i FROM 0 TO n-1 STEP 1  DO
+   FOR j FROM 0 TO n-1 STEP 1  DO
+
+   IF (tab1[i] <> tab2[j] & tab1[i] <> sum [i]) THEN
+    sum:= sum + tab1[i]
+    
+ END_IF
+END_FOR
+END_FOR
+
+UNTIL (tab1[i]= tab2[j])
+END
+
