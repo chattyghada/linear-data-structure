@@ -1,15 +1,15 @@
-ALGORITHM P1
+ALGORITHM P2
 VAR
     arr1 : ARRAY_OF INTEGER[n];
     arr2 : ARRAY_OF INTEGER[n];
     sum : INTEGER := 0 ;
-    y,x,i,j,n : INTEGER;
+    y,x,i,j ,n: INTEGER;
 
 BEGIN
-    FOR i FROM 0 TO n-1  DO
+    FOR i FROM 0 TO n-1 DO
         FOR j FROM 0 TO n-1  DO
             
-            IF (arr1[i] <> arr2[j]) THEN
+            IF (arr1[i] = arr2[j]) THEN
                 x:= arr[i] ;
             ELSE
                 x:= 0 ;
@@ -22,10 +22,10 @@ BEGIN
         i := i+1 ;
     END_FOR
     
-    FOR j FROM 0 TO n-1   DO
-        FOR i FROM 0 TO n-1   DO
+    FOR j FROM 0 TO n-1 DO
+        FOR i FROM 0 TO n-1 DO
             
-            IF (arr1[i] <> arr2[j]) THEN
+            IF (arr1[i] = arr2[j]) THEN
                 y:= arr[j] ;
             ELSE
                 y:= 0 ;
@@ -37,4 +37,3 @@ BEGIN
         j := j+1 ;
     END_FOR
 END
-
